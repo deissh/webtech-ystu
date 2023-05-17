@@ -2,63 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+
+    <link rel="stylesheet" href="styles/index.scss">
   </head>
   <body>
-    <div id="app" class="mx-auto max-w-7xl p-8 space-y-8 text-center">
-      <div class="flex flex-wrap gap-2 items-center justify-center text-zinc-400 text-3xl leading-none">
-        <a href="https://vitejs.dev">
-          <img src="/vite.svg" class="w-24 p-6 will-change-filter hover:drop-shadow-logo" style="--logo-color: #646cffaa" alt="Vite logo" />
-        </a>
-        +
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-          <img src="/javascript.svg" class="w-24 p-6 will-change-filter hover:drop-shadow-logo" style="--logo-color: #f7df1eaa" alt="JavaScript logo" />
-        </a>
-        +
-        <a href="https://stimulus.hotwired.dev/">
-          <img src="/stimulus.svg" class="w-24 p-6 will-change-filter hover:drop-shadow-logo" style="--logo-color: #000000aa" alt="Stimulus logo" />
-        </a>
-        +
-        <a href="https://tailwindcss.com/">
-          <img src="/tailwind.svg" class="w-24 p-6 will-change-filter hover:drop-shadow-logo" style="--logo-color: #38bdf8aa" alt="Tailwind CSS logo" />
-        </a>
-      </div>
-      <h1 class="text-6xl bg-gradient-to-r from-sky-400 to-purple-500 bg-clip-text text-transparent">Hello Vite!</h1>
-      <div class="flex justify-center">
-        <button
-          id="counter"
-          type="button"
-          data-controller="counter"
-          data-action="counter#increment"
-          class="border dark:border-zinc-500 rounded py-2 px-4 hover:bg-zinc-100 dark:hover:bg-zinc-700"
-        ></button>
-      </div>
-      <form class="max-w-xs mx-auto" data-controller="hello">
-        <div class="flex gap-2">
-          <label for="your-name" class="sr-only">
-            Your Name
-          </label>
-          <input
-            id="your-name"
-            type="text"
-            placeholder="Enter your name"
-            class="border dark:border-zinc-500 rounded p-2 flex-1"
-            data-hello-target="input"
-            data-action="keyup->hello#handleKeyup"
-          >
-          <button
-            class="bg-sky-600 hover:bg-sky-800 text-white px-4 py-2 rounded disabled:bg-zinc-300 disabled:text-zinc-500 dark:disabled:bg-zinc-700 disabled:cursor-not-allowed"
-            data-hello-target="button"
-            data-action="hello#greet:prevent"
-          >
-            Greet
-          </button>
+
+    <div class="header fixed">
+      <a class="header__button button" href="/">
+        Lorem Ipsu
+      </a>
+
+      <div class="header__menu">
+        <a class="header__button button" href="/">Home</a>
+
+
+        <a class="header__button button" href="/pages/tables.html">Tables</a>
+        <a class="header__button button" href="#">Lists</a>
+
+        <div class="dropdown header__button ">
+          <div class="dropdown__button button">Client area</div>
+
+          <div class="dropdown__content">
+            <a class="header__button button" href="/">Sign in</a>
+            <a class="header__button button" href="/">Sign up</a>
+          </div>
         </div>
-        <p class="mt-2" data-hello-target="output">&nbsp;</p>
-      </form>
+
+      </div>
     </div>
-    <script type="module" src="/main.js"></script>
+
+    <div class="container">
+
+      <h1>Lorem Ipsum</h1>
+
+      <h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
+
+      <h5>"Нет никого, кто любил бы боль саму по себе, кто искал бы её и кто хотел бы иметь её просто потому, что это боль.."</h5>
+
+      <hr />
+
+      <h2>Что такое Lorem Ipsum?</h2>
+
+      <p>
+        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+      </p>
+
+      <h2>Почему он используется?</h2>
+
+      <p>
+        Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
+      </p>
+
+      <h2>Откуда он появился?</h2>
+
+      <p>
+        Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32
+        <br>
+        <br>
+        Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.
+      </p>
+
+      <hr>
+
+      <h3>Классический текст Lorem Ipsum, используемый с XVI века</h3>
+
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      </p>
+
+      <h3>Абзац 1.10.32 "de Finibus Bonorum et Malorum", написанный Цицероном в 45 году н.э.</h3>
+
+      <p>
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+      </p>
+
+    </div>
+
   </body>
 </html>

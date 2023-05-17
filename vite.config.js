@@ -1,9 +1,22 @@
 import { defineConfig } from 'vite'
-import StimulusHMR from 'vite-plugin-stimulus-hmr'
+import legacy from '@vitejs/plugin-legacy'
+import { createHtmlPlugin } from 'vite-plugin-html'
+
 
 export default defineConfig({
   plugins: [
-    StimulusHMR(),
+    // legacy({
+    //   targets: ['defaults', 'not IE 11'],
+    // }),
+    createHtmlPlugin({
+      pages: [{
+        template: 'index.html',
+        filename: 'index.html',
+      }, {
+        template: 'pages/tables.html',
+        filename: 'pages/tables.html',
+      }],
+    })
   ],
   preview: {
     open: true,

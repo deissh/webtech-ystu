@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-between;
+
+  // TODO(ench): move out to const
+  padding: 0 20px;
+
+  width: auto;
+  height: 50px;
+
+  background-color: #222222;
+  user-select: none;
+
+  &.fixed {
+    position: sticky;
+
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 100%;
+
+    //todo: replace by hamburger
+    overflow: auto;
+  }
+
+  &__button {
+    white-space: nowrap
+  }
+}

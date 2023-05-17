@@ -1,0 +1,13 @@
+// simple safe screen
+.container {
+  max-width: 100%;
+
+  padding-right: .75rem;
+  padding-left: .75rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 992px) {
+    max-width: 760px;
+  }
+}

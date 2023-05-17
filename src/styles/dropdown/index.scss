@@ -1,0 +1,14 @@
+.dropdown {
+  &__content {
+    display: none;
+    position: absolute;
+
+    box-sizing: border-box;
+
+    min-width: 100px;
+  }
+
+  &:hover &__content {
+    display: block;
+  }
+}

@@ -1,0 +1,23 @@
+.row {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+
+  & > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+
+    padding-right: 0.75rem;
+    padding: 0.75rem;
+  }
+}
+
+.col {
+  display: flex;
+
+  flex-direction: row;
+}
