@@ -13,8 +13,8 @@ export default defineConfig({
         template: 'index.html',
         filename: 'index.html',
       }, {
-        template: 'pages/tables.html',
-        filename: 'pages/tables.html',
+        template: 'tables.html',
+        filename: 'tables.html',
       }],
     })
   ],
