@@ -1,1 +1,67 @@
-asd
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+  <link rel="stylesheet" href="styles/index.scss">
+</head>
+<body>
+
+<div class="header fixed">
+  <a class="header__button button" href="/">
+    Lorem Ipsu
+  </a>
+
+  <div class="header__menu">
+    <a class="header__button button" href="/">Home</a>
+
+    <a class="header__button button" href="./tables.html">Tables</a>
+
+    <div class="dropdown header__button ">
+      <div class="dropdown__button button">Client area</div>
+
+      <div class="dropdown__content">
+        <a class="header__button button" href="/">Sign in</a>
+        <a class="header__button button" href="/">Sign up</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+
+  <h1>Tables</h1>
+
+  <table class="table">
+    <thead class="table__head">
+      <tr>
+        <th>UUID</th>
+        <th>First name</th>
+        <th>Second name</th>
+        <th>Address</th>
+        <th>Phone number</th>
+      </tr>
+    </thead>
+
+    <tbody class="table__body">
+
+    <% for (var i = 0; i < 10; i++) { %>
+      <tr>
+        <td>788adf25-2913-406d-8675-9885016d304b</td>
+        <td>Lorem</td>
+        <td>Ipsu</td>
+        <td>Sit amit</td>
+        <td>+7999003636</td>
+      </tr>
+    <% } %>
+
+    </tbody>
+  </table>
+
+</div>
+
+</body>
+</html>

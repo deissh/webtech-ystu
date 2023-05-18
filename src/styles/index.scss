@@ -3,5 +3,12 @@
 @import "./header";
 @import "./button";
 @import "./dropdown";
+@import "./table";
 
 @import "./utils";
+
+//noinspection CssUnknownTarget
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  font-family: 'Roboto', sans-serif;
+}

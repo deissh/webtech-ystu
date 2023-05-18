@@ -1,0 +1,36 @@
+.table {
+  overflow: auto;
+  width: 100%;
+
+  border-collapse: collapse;
+
+  &__head {
+    width: 100%;
+    padding: (12 * 1.5px) 0;
+
+    background: #222222;
+  }
+
+  &__body {
+    max-height: 300px;
+
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+
+  th, td {
+
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  th {
+    color: #fff;
+  }
+  tr:hover {
+    background-color: rgba(34,34,34,0.1);
+  }
+}
+

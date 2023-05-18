@@ -1,0 +1,35 @@
+.zoom-container {
+  height: auto;
+  object-fit: cover;
+
+  & > img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &.zoom {
+    display: flex;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999; // fix overlapping content
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: black;
+    overflow: hidden;
+
+    transition-property: background-color;
+    transition-duration: 0.5s;
+
+    &:hover {
+      cursor: zoom-out;
+    }
+  }
+
+  &:hover {
+    cursor: zoom-in;
+  }
+}
