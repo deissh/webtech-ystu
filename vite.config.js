@@ -10,11 +10,14 @@ export default defineConfig({
     // }),
     createHtmlPlugin({
       pages: [{
-        template: 'index.html',
-        filename: 'index.html',
-      }, {
         template: 'tables.html',
         filename: 'tables.html',
+      },{
+        template: 'sign_in.html',
+        filename: 'sign_in.html',
+      }, {
+        template: 'index.html',
+        filename: 'index.html',
       }],
     })
   ],

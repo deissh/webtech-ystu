@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="initial-scale=1" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <title>Tables</title>
+  <title>Sign In</title>
   <link rel="stylesheet" href="styles/index.scss">
 </head>
 <body>
@@ -33,34 +33,38 @@
 
 <div class="container">
 
-  <h1>Tables</h1>
+  <h1>Sign In</h1>
 
-  <table class="table">
-    <thead class="table__head">
-      <tr>
-        <th>UUID</th>
-        <th>First name</th>
-        <th>Second name</th>
-        <th>Address</th>
-        <th>Phone number</th>
-      </tr>
-    </thead>
+  <form class="row">
 
-    <tbody class="table__body">
+    <div class="mb-1">
+      <label for="email" class="form-label">
+        Email address
+      </label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        placeholder="name@test.com"
+        required>
+    </div>
 
-    <% for (var i = 0; i < 10; i++) { %>
-      <tr>
-        <td>788adf25-2913-406d-8675-9885016d304b</td>
-        <td>Lorem</td>
-        <td>Ipsu</td>
-        <td>Sit amit</td>
-        <td>+7999003636</td>
-      </tr>
-    <% } %>
+    <div class="mb-1">
+      <label for="email" class="form-label">
+        Password
+      </label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        placeholder="*****"
+        minlength="8"
+        required>
+    </div>
 
-    </tbody>
-  </table>
+    <button class="button button-secondary" type="submit">Sign In</button>
 
+  </form>
 </div>
 
 </body>
