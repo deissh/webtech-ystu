@@ -38,6 +38,43 @@
   <form class="col">
 
     <div class="mb-2">
+      <label for="first_name" class="form-label">
+        First name
+      </label>
+      <input
+        type="text"
+        class="form-control"
+        id="first_name"
+        placeholder="John"
+        required>
+    </div>
+
+    <div class="mb-2">
+      <label for="last_name" class="form-label">
+        Last name
+      </label>
+      <input
+        type="text"
+        class="form-control"
+        id="last_name"
+        placeholder="Doe"
+        required>
+    </div>
+
+    <div class="mb-2">
+      <label for="phone" class="form-label">
+        Phone (+7 XXX XXX XX XX)
+      </label>
+      <input
+        type="tel"
+        class="form-control"
+        id="phone"
+        placeholder="+7 XXX XXX XX XX"
+        pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?"
+        required>
+    </div>
+
+    <div class="mb-2">
       <label for="email" class="form-label">
         Email address
       </label>
@@ -60,6 +97,18 @@
         placeholder="*****"
         minlength="8"
         required>
+    </div>
+
+    <div class="mb-2">
+      <label for="free_text" class="form-label">
+        Free text
+      </label>
+      <textarea
+        type="text"
+        class="form-control form-control__text no-validate"
+        rows="4"
+        id="free_text"
+      ></textarea>
     </div>
 
     <button class="button button-secondary max-content mx-auto" type="submit">Sign In</button>
