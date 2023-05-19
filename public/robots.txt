@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://deissh.github.io/webtech-ystu/sitemap.xml

@@ -1,3 +1,6 @@
+import './styles/index.scss';
+
+
 window.onload = () => document
   .querySelectorAll(".zoom-container")
   .forEach((el) => {

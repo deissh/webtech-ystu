@@ -16,6 +16,9 @@ export default defineConfig({
         template: 'sign_in.html',
         filename: 'sign_in.html',
       }, {
+        template: 'sign_up.html',
+        filename: 'sign_up.html',
+      }, {
         template: 'index.html',
         filename: 'index.html',
       }],

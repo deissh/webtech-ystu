@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://deissh.github.io/webtech-ystu/index.html</loc>
+        <lastmod>2023-05-19</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://deissh.github.io/webtech-ystu/tables.html</loc>
+        <lastmod>2023-05-19</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://deissh.github.io/webtech-ystu/sign_in.html</loc>
+        <lastmod>2023-05-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+    </url>
+  <url>
+    <loc>https://deissh.github.io/webtech-ystu/sign_up.html</loc>
+    <lastmod>2023-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+</urlset>
